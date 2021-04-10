@@ -1,0 +1,41 @@
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: 90vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+}
+
+.clover {
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 25px;
+}
+
+.clover-ne {
+    border-radius: 25px 25px 25px 0px;
+}
+
+.clover-se {
+    border-radius: 0px 25px 25px 25px;
+}
+
+.clover-sw {
+    border-radius: 25px 0px 25px 25px;
+}
+
+.clover-nw {
+    border-radius: 25px 25px 0px 25px;
+}
