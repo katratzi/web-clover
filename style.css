@@ -1,14 +1,18 @@
+/* https://colorhunt.co/palette/103966 */
+
 * {
     /* border: 1px solid red; */
     box-sizing: border-box;
 }
 
 body {
-    background-color: #0D3B66;
+    /* nice background and make almost full height */
+    background-color: #086972;
     height: 90vh;
 }
 
 .flex-container {
+    /* position center hor & ver */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,69 +22,76 @@ body {
 }
 
 .circle {
+    /* our focus circle */
     width: 192px;
     height: 192px;
-    border: 1px solid #222;
+    border: 2px solid #222;
     border-radius: 96px;
-    background-color: whitesmoke;
+    background-color: #dbf6e9;
 }
 
 .circle:hover {
-    border: 1px solid #eee;
+    /* border: 1px solid #17b978; */
 }
 
 .circle:hover .grid-container {
-    /* gap: 16px; */
+    /* fade in the grid and rotate to normal */
     opacity: 100%;
     transform: rotate(0deg);
 }
 
 .grid-container {
+    /* four clovers from here */
     display: grid;
     grid-template-columns: 48px 48px;
     grid-template-rows: 48px 48px;
-    gap: 0px;
+    gap: 4px;
     /* transition: transform 1s ease-in; */
-    transition: all 0.6s ease-out;
+    transition: all 0.66s ease-out;
     opacity: 0%;
     transform: rotate(90deg);
 }
 
 .clover {
-    border: 1px solid black;
+    /* shared class for 4 leaves */
+    border: 1px solid #222;
     border-radius: 24px;
     transition: all 0.3s;
-    color: rgba(255, 255, 255, 0);
     font-size: 1.5rem;
+    background-color: #086972;
+    color: #dbf6e9;
 }
 
 .clover:hover {
-    border: 1px solid white;
+    border: 1px solid #086972;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transform: scale(1.2);
-    color: rgba(255, 255, 255, 255);
+    color: #086972;
+    background-color: #a7ff83;
 }
+
+/* Our 4 leaves. origin to center and round outside corners */
 
 .clover-ne {
     border-radius: 24px 24px 24px 0px;
-    background-color: #FAF0CA;
+    /* background-color: #FAF0CA; */
     transform-origin: 0% 100%;
 }
 
 .clover-se {
     border-radius: 0px 24px 24px 24px;
-    background-color: #F4D35E;
+    /* background-color: #F4D35E; */
     transform-origin: 0% 0%;
 }
 
 .clover-sw {
     border-radius: 24px 0px 24px 24px;
-    background-color: #EE964B;
+    /* background-color: #EE964B; */
     transform-origin: 100% 0%;
 }
 
 .clover-nw {
     border-radius: 24px 24px 0px 24px;
-    background-color: #F95738;
+    /* background-color: #F95738; */
     transform-origin: 100% 100%;
 }
