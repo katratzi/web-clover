@@ -20,16 +20,19 @@ body {
 .circle {
     width: 192px;
     height: 192px;
-    border: 1px dashed rgba(238, 238, 238, 0.502);
+    border: 1px solid #222;
     border-radius: 96px;
+    background-color: whitesmoke;
 }
 
 .circle:hover {
-    border: 1px dashed rgba(238, 238, 238, 1);
+    border: 1px solid #eee;
 }
 
 .circle:hover .grid-container {
-    gap: 16px;
+    /* gap: 16px; */
+    opacity: 100%;
+    transform: rotate(0deg);
 }
 
 .grid-container {
@@ -37,36 +40,47 @@ body {
     grid-template-columns: 48px 48px;
     grid-template-rows: 48px 48px;
     gap: 0px;
-    transition: all 0.3s linear;
+    /* transition: transform 1s ease-in; */
+    transition: all 0.6s ease-out;
+    opacity: 0%;
+    transform: rotate(90deg);
 }
 
 .clover {
     border: 1px solid black;
     border-radius: 24px;
     transition: all 0.3s;
+    color: rgba(255, 255, 255, 0);
+    font-size: 1.5rem;
 }
 
 .clover:hover {
     border: 1px solid white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.2);
+    color: rgba(255, 255, 255, 255);
 }
 
 .clover-ne {
     border-radius: 24px 24px 24px 0px;
     background-color: #FAF0CA;
+    transform-origin: 0% 100%;
 }
 
 .clover-se {
     border-radius: 0px 24px 24px 24px;
     background-color: #F4D35E;
+    transform-origin: 0% 0%;
 }
 
 .clover-sw {
     border-radius: 24px 0px 24px 24px;
     background-color: #EE964B;
+    transform-origin: 100% 0%;
 }
 
 .clover-nw {
     border-radius: 24px 24px 0px 24px;
     background-color: #F95738;
+    transform-origin: 100% 100%;
 }
