@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plaster&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <title>Four Leaf Clover</title>
-</head>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
 
-<body>
-    <div class="flex-container">
-        <div class="circle flex-container">
-            <div class="grid-container">
-                <!-- four leaves -->
-                <div class="flex-container clover clover-nw"><i class="fab fa-facebook"></i></div>
-                <div class="flex-container clover clover-ne"><i class="fab fa-slack"></i></div>
-                <div class="flex-container clover clover-sw"><i class="fab fa-instagram"></i></div>
-                <div class="flex-container clover clover-se"><i class="fab fa-google"></i></div>
-            </div>
-        </div>
+    <title>TzYi</title>
+    <style>
+      * {
+        /* border: 1px solid red; */
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      /* this is kind of fun */
+
+      body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .center-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        font-size: 50vh;
+        text-align: center;
+        font-family: "Plaster", cursive;
+        /* -webkit-text-stroke: 1px black; */
+        color: #eee;
+
+        text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+          10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="center-me">
+      <!-- <div class="flex-container"> -->
+      <h1>TZYI</h1>
+      <!-- </div> -->
     </div>
-</body>
-
+  </body>
 </html>

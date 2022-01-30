@@ -1,97 +1,30 @@
-/* https://colorhunt.co/palette/103966 */
+@import url("https://fonts.googleapis.com/css2?family=Plaster&display=swap");
 
 * {
-    /* border: 1px solid red; */
-    box-sizing: border-box;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
 }
 
 body {
-    /* nice background and make almost full height */
-    background-color: #086972;
-    height: 90vh;
+  /* nice background and make almost full height */
+  background-color: #086972;
+  height: 90vh;
+}
+
+h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "Plaster", cursive;
+  -webkit-text-stroke: 1px black;
+  color: #eee;
 }
 
 .flex-container {
-    /* position center hor & ver */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-}
-
-.circle {
-    /* our focus circle */
-    width: 192px;
-    height: 192px;
-    border: 2px solid #222;
-    border-radius: 96px;
-    background-color: #dbf6e9;
-}
-
-.circle:hover {
-    /* border: 1px solid #17b978; */
-}
-
-.circle:hover .grid-container {
-    /* fade in the grid and rotate to normal */
-    opacity: 100%;
-    transform: rotate(0deg);
-}
-
-.grid-container {
-    /* four clovers from here */
-    display: grid;
-    grid-template-columns: 48px 48px;
-    grid-template-rows: 48px 48px;
-    gap: 4px;
-    /* transition: transform 1s ease-in; */
-    transition: all 0.66s ease-out;
-    opacity: 0%;
-    transform: rotate(90deg);
-}
-
-.clover {
-    /* shared class for 4 leaves */
-    border: 1px solid #222;
-    border-radius: 24px;
-    transition: all 0.3s;
-    font-size: 1.5rem;
-    background-color: #086972;
-    color: #dbf6e9;
-}
-
-.clover:hover {
-    border: 1px solid #086972;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform: scale(1.2);
-    color: #086972;
-    background-color: #a7ff83;
-}
-
-/* Our 4 leaves. origin to center and round outside corners */
-
-.clover-ne {
-    border-radius: 24px 24px 24px 0px;
-    /* background-color: #FAF0CA; */
-    transform-origin: 0% 100%;
-}
-
-.clover-se {
-    border-radius: 0px 24px 24px 24px;
-    /* background-color: #F4D35E; */
-    transform-origin: 0% 0%;
-}
-
-.clover-sw {
-    border-radius: 24px 0px 24px 24px;
-    /* background-color: #EE964B; */
-    transform-origin: 100% 0%;
-}
-
-.clover-nw {
-    border-radius: 24px 24px 0px 24px;
-    /* background-color: #F95738; */
-    transform-origin: 100% 100%;
+  /* position center hor & ver */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
 }
