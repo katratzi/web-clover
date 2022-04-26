@@ -46,3 +46,4 @@ jobs:
           server: ftp.katratzi.com
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
+          local-dir: ./public/
