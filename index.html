@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plaster&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet" />
 
-    <title>TzYi</title>
-    <style>
-      * {
-        /* border: 1px solid red; */
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-      }
-      /* this is kind of fun */
+  <!-- <link rel="stylesheet" href="./style.css"> -->
 
-      body {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
+  <title>TzYi</title>
+  <style>
+    * {
+      /* border: 1px solid red; */
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    /* this is kind of fun */
+
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
       }
 
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
+      50% {
+        background-position: 100% 50%;
       }
-      .center-me {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+
+      100% {
+        background-position: 0% 50%;
       }
-      h1 {
-        font-size: 20vw;
-        text-align: center;
-        font-family: "Plaster", cursive;
-        color: #eee;
-        /* text-shadow: 10px 20px 5px rgba(0, 0, 0, 0.05),
+    }
+
+    .center-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 20vw;
+      text-align: center;
+      font-family: "Plaster", cursive;
+      color: #eee;
+      /* text-shadow: 10px 20px 5px rgba(0, 0, 0, 0.05),
           -10px 20px 5px rgba(0, 0, 0, 0.05); */
-        text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
-          10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
-      }
-    </style>
-  </head>
+      text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+        10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
 
-  <body>
-    <div class="center-me">
-      <!-- <div class="flex-container"> -->
-      <h1>TZYI</h1>
-      <!-- </div> -->
-    </div>
-  </body>
+<body>
+  <div class="center-me">
+    <!-- <div class="flex-container"> -->
+    <h1>TZYI</h1>
+    <!-- </div> -->
+  </div>
+  <p>hello world</p>
+</body>
+
 </html>
